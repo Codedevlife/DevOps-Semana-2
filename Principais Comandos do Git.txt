@@ -1,0 +1,55 @@
+Aqui estão listados e comentados os principais comandos do Git. Eles podem ser utilizados tanto no GitLab quanto no GitHub.
+
+Tais comandos são fundamentais para criar um arquivo no Git e enviá-lo remotamente para o site GitLab/GitHub.
+
+## Reconhecimento do Git sobre arquivo criado. 
+
+git status  
+
+## O primeiro `add` submete o arquivo ao versionamento. 
+
+git add README.txt  
+
+## Registro de versão. 
+
+git commit -m 'Cria arquivo com título'  
+
+## Excluir o arquivo. 
+
+git rm README.txt  
+
+## Abandona modificações feitas presentes no arquivo. 
+
+git checkout -- README.txt 
+
+## Cria um ramo para adição de conteúdo, novo segmento. 
+
+git branch feature01  
+
+## Muda o HEAD de ramo/saímos do nó Master para a feature01. 
+
+git checkout feature01  
+
+## Volta para o ramo master. 
+
+git checkout master  
+
+## Mesclando as modificações em feature01 no master. 
+
+git merge feature01 master  
+
+## Clona repositório do Git. 
+
+git clone projeto/TesteClone.git  
+
+## Enviar os arquivos para o repositório remoto. 
+
+git push origin master  
+
+## Importa os arquivos da última versão da master. 
+
+git pull origin master  
+
+## Transfere arquivo do repositório remoto para o local. 
+
+git fetch origin master 
